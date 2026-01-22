@@ -40,6 +40,8 @@ We fine-tune the the Hugging Face model repository (google/vit-base-patch16-224-
 ### Reproduction
 It is really hard for the reproduced model to converge with this dataset. The accuracy for training set decreases from 5.62 to 5.29 after 40 epochs and stays around 5.3 for 37 epochs.
 
+![](image/TrainingAccuracy.png)
+
 ### Fine-tuning
 We freeze pre-trained ViT model first and only train the classification head for 5 epochs. Then, we train the whole model for 20 epochs. After all this we achieve
 | Metric            | Value |
