@@ -51,10 +51,10 @@ We freeze pre-trained ViT model first and only train the classification head for
 
 ## Discussion
 ### Reproduction
-It is expected that ViT hardly converges with this dataset. According to Dosovitskiy et al. (2020), ViT has low inductive bias, which means that it requires large amounts of training data to learn everything from scratch, such as locality. On the contrary, traditional conv net, such as VGG, already assumes locality, hierarchical feature composition and so on. As a result, Some small dataset like tiny-imagenet-200 is appropriate for traditional CNNs.
+It is expected that ViT hardly converges with this dataset. According to Dosovitskiy et al. (2020), ViT has low inductive bias, which means that it requires large amounts of training data to learn everything from scratch, such as locality. On the contrary, traditional conv net, such as VGG, already assumes locality, hierarchical feature composition and so on. As a result, small dataset like tiny-imagenet-200 is appropriate for traditional CNNs.
 
 ### Fine-Tuning
-Unlike training ViT from scratch, the pre-trained model already learned visual patterns and spatial structures, which reduced the data requirements for fine-tuning.
+Unlike training ViT from scratch, the pre-trained model already learned visual patterns and spatial structures, which reduced the data requirements for fine-tuning. From the results, it can be found that the fine-tuned model converges lot more better than the reproduced one.
 
 ## References
 Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., & Houlsby, N. (2020). An image is worth 16×16 words: Transformers for image recognition at scale. *arXiv*. https://arxiv.org/abs/2010.11929
