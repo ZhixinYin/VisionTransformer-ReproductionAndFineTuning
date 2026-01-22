@@ -31,7 +31,7 @@ This project reproduces and fine-tunes the original Vision Transformer (ViT) arc
 
 ## Dataset
 ### Reproduction
-tiny-imagenet-200 is used as the dataset in this reproduction. Validation set is used as test set, as the actual test set is not labelled. Each image is resized from 64×64 to 256*256 and randomly crop an 224*224 image from it. The images are later normalised across the RGB channels with mean (0.5, 0.5, 0.5) and standard deviation (0.5, 0.5, 0.5), which aligns with the Hugging Face model repository (google/vit-base-patch16-224-in21k; Hugging Face, 2026)
+tiny-imagenet-200 is used as the dataset in this reproduction. Validation set is used as test set, as the actual test set is not labelled. Each image is resized from 64 * 64 to 256 * 256 and randomly crop an 224 * 224 image from it. The images are later normalised across the RGB channels with mean (0.5, 0.5, 0.5) and standard deviation (0.5, 0.5, 0.5), which aligns with the Hugging Face model repository (google/vit-base-patch16-224-in21k; Hugging Face, 2026)
 
 ### Fine-Tuning
 We fine-tune the the Hugging Face model repository (google/vit-base-patch16-224-in21k; Hugging Face, 2026). The preprocessing for fine-tuning stays same as reproduction to match the training data used in the Hugging Face model repository (google/vit-base-patch16-224-in21k; Hugging Face, 2026)
