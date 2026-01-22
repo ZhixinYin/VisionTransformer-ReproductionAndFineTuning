@@ -38,7 +38,7 @@ We fine-tune the the Hugging Face model repository (google/vit-base-patch16-224-
 
 ## Results
 ### Reproduction
-It is really hard for the reproduced model to converge with this dataset. The accuracy for training set decreases from 5.62 to 5.29 after 40 epochs and stays around 5.3 for 37 epochs.
+It is really hard for the reproduced model to converge with this dataset. The loss decreases from 5.62 to 5.29 after 40 epochs and stays around 5.3 for 37 epochs. Moreover, accuracy also doesn't increase.
 
 ![](image/TrainingAccuracy.png)
 
